@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+             *{
+                padding: 10px;
+                margin: 10px;
+                color: blue;
+                background-color: blanchedalmond;
+                border-radius: 20px;
+                font-size: 40px;
+                font-family: 'Times New Roman', Times, serif;
+                opacity: 0.9;
+                float: none;
+             }
+             button{
+                background-color: aqua;
+                color: black;
+                border: 0ch;
+             }
+             .nev{
+                background-color: whitesmoke;
+                color: blue;
+                font: optional;
+
+            }
+        </style>
+        <title>örnek</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div class="nev">
+    <h1>Sınav Sonucu</h1>
+</div>
+    <form>
+        <input type="text"   onchange="hesapla()" id = "vize" placeholder="Vize">
+        <input type="text"  onchange="hesapla()" id = "final" placeholder="Final">
+       
+        
+    </form>
+    <p id = "sonuc"></p>
+    <script>
+        function  hesapla()
+        {
+           
+            let vize = document.getElementById("vize").value;
+            let final = document.getElementById("final").value;
+            let sonuc = vize*0.4 + final * 0.6;
+            document.getElementById("sonuc").innerHTML = sonuc;
+           
+          b    
+           
+        }
+
+    </script>
+</body>
+</html>
