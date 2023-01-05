@@ -1,37 +1,79 @@
+
 *{
     padding: 0;
     margin: 0;
 
-    font-family: 'Times New Roman', Times, serif;
-background-color: rgba(30, 99, 118, 0);
-opacity: 2;
 }
+.media{
+ text-align: center;
+ size: 20px;
+ background-color: gray;
+ border: 0px;
+ padding: 10px;
+ padding-right: 20px;
+ padding-left: 62px;
+ margin: 0px;
+}
+.content ul li { color : black;
 
-.banner
+}
+.content 
 {
-height: 100vh;
-width: 100%;
-background-position: center;
-background-size: cover;
+      background-color: rgb(128,128,128) !important ;
 }
+.content p {
+    background-color: #bdbdbd!important;
+    color : black !important;
+}
+.content h1,h2,h3
+{
+    color: #2a2a2a;
+}
+table{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: black;
+size: 25px;
+padding: 5px;
+margin: 5px;
+width: 100%;
+height: auto;
 
+}
+.sabit-footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    size: 20px;
+    
+}
 .navber ul li {
+    opacity: 0.9;
     list-style-type: none;
-    display: inline-block;
-    padding: 15px;
-    margin: 10px;
-    font-size: 24px;
-    background-color: rgb(2, 1, 4);
+    display:inline-block;
+  padding: 10px;
+    padding-top: 40px;
+    margin: 0px;
+    font-size: 33px;
+    background-color: rgb(5, 5, 5);
     color: rgb(121, 119, 119);
 }
 .navber ul li a
 { 
+   
     text-decoration: none;
     margin-left: 15 px;
     color: azure;
+    transition: color 1s , background 1s;
 }
-.navber
+.navber ul
 {
+    
     background-color :black;
     text-align: right;
 }
@@ -42,39 +84,42 @@ background-size: cover;
     color: black;
 }
 
-.arkaplancs {
-    opacity: 0.8;
+.arkaplancs { 
+    opacity: 0.9;
     width: 100%;
     height: 600px;
 }
-h1{
-    color:white;
+.h1_1{
+      color:white;
     background-color: black;
-    opacity: 0.7;
-    position: absolute;
-  top: 300px;
-  left : 300px;
-  font-size: 50px;
+   position: absolute;
+   top: 300px;
+   left : 350px;
+   opacity: 0.7;
+   font-size: 50px;
 }
 .card 
 {
+
+
     margin: 20px;
     width: 30%;
     height: 70%;
     box-shadow: 0  4px 8px 0 rgba(0, 0, 0,0.2);
     border-radius: 15px;
     float: left;
-    transition: box-shadow 0.2s;
-    background-color :rgba(0, 0, 0, 0.985);
-    color: rgba(250, 250, 250, 0.841);
+    
+    background-color :rgba(20, 20, 20, 0.863);
+    color: white;
 
 }
 .card:hover
 {
-    box-shadow: 0  7px 15px 0, rgba(0, 0, 0,0.2);
+    box-shadow: 0  7px 15px 0,black;
 }
 .card-body{
     padding: 10px 15px;
+    
 }
 
 .card-title {
@@ -90,3 +135,45 @@ border-radius: 10px;
 .cardresim:hover{
     opacity: 0.8;
 }
+.content{
+    color: rgb(1,1,1);
+    background-color: rgb(210, 249, 189);
+    font-size: 20px;
+    border: 3 solid rgb(223, 49, 49);
+    border-radius: 50px;
+    margin :15px;
+    padding: 15px;
+     text-align: left;
+     line-height: 30px;
+}
+.icerik p{
+    
+    background-color: white;
+    border-style: solid; border-width: 1px;
+    border: 2 solid black;
+}
+h2{
+    text-align: center;
+}
+h3{
+    background: transparent;
+    display: inline-block;
+text-align: left;
+}
+
+    
+
+    @media (max-width:768px) {
+       
+       
+       
+       
+    }
+    @media (min-width:768px) {
+       .navber ul {
+        display:block!important;
+    }
+    }
+
+
+   
