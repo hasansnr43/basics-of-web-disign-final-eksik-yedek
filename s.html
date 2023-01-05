@@ -1,57 +1,87 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <style>
-             *{
-                padding: 10px;
-                margin: 10px;
-                color: blue;
-                background-color: blanchedalmond;
-                border-radius: 20px;
-                font-size: 40px;
-                font-family: 'Times New Roman', Times, serif;
-                opacity: 0.9;
-                float: none;
-             }
-             button{
-                background-color: aqua;
-                color: black;
-                border: 0ch;
-             }
-             .nev{
-                background-color: whitesmoke;
-                color: blue;
-                font: optional;
-
-            }
-        </style>
-        <title>örnek</title>
-        <meta charset="utf-8">
-    </head>
-    <body>
-        <div class="nev">
-    <h1>Sınav Sonucu</h1>
-</div>
-    <form>
-        <input type="text"   onchange="hesapla()" id = "vize" placeholder="Vize">
-        <input type="text"  onchange="hesapla()" id = "final" placeholder="Final">
-       
+<head>
+<title>uye_kayit</title>
+<meta charset="utf-8"> 
+<link rel="stylesheet" href="./style.css">
+<style>
+    
+.container-2{
+    width: 100%;
+    height: 35%;
+        background-color: gray;
+     
+      
+        display: inline-block;
+   
+        font-size: 23px;
+        size: 50px;
+        text-align: center;
+    }
+</style>  
+</head>
+<body>
+    <script type="text/javascript">
         
-    </form>
-    <p id = "sonuc"></p>
-    <script>
-        function  hesapla()
-        {
-           
-            let vize = document.getElementById("vize").value;
-            let final = document.getElementById("final").value;
-            let sonuc = vize*0.4 + final * 0.6;
-            document.getElementById("sonuc").innerHTML = sonuc;
-           
-          b    
-           
-        }
+        alert("kaydettikten sonra ; 12 saat içerisinde üyelik oluşturulacaktır."); 
+      </script>
+    <div class="banner">
+        <div class="navber">
+            
+            <ul>
+                                               
+        <li><a href="./index.html">ANASAYFA</a></li>
+          <li><a href="./s.html">ÜYE KAYIT</a></li>
+          <li><a href="./balıkesir_page.html">BALIKESİR BASKETBOL</a></li>
+                  
+            </ul>
+    <div class="sabit-footer">
+        <p>Telif Hakları Saklıdır. @2023</p>
+        <p>hasan.sener1@ogr.dpu.edu.tr</p>
+    </div>
+    <div class="container-2">
+<form action="" method="get" >
+<table border="0">
+<tr>
+<td>Ad :</td>
 
-    </script>
+<td><input type="text" name="ad" id="ad" required placeholder="Lütfen Adınızı Girin"></td>
+
+</tr>
+
+<tr>
+<td>Soyad :</td>
+<td><input type="text"name="soyad"id="soyad" required placeholder="Lütfen Soyadınızı Girin"></td>
+</tr>
+<tr>
+ 
+<td colspan="2">
+KADIN<input type="radio"name="cinsiyet" id="cinsiyet"  value="kadın">
+ERKEK<input type="radio" name="cinsiyet" id="cinsiyet" value="erkek">
+</td>
+ 
+</tr>
+<tr>
+<td>YAŞ</td>
+<td><input type="number" name="yas" id="yas" min="18" max="88"></td>
+</tr>
+ 
+<tr>
+<td>MAİL:</td>
+<td><input type="email" name="mail" id="mail" required></td>
+</tr>
+ 
+<tr>
+<td colspan="2">
+<input type="submit" name="kaydet" id="kaydet" value="KAYDET">
+<input type="reset" name="sil" id="sil" value="TEMİZLE">
+       
+</td>
+</tr>        
+    </table>    
+ 
+</form>
+    </div>
+    <img src ="./3.jpg" style="width: 100%; height: auto;" alt="tanıtım">
 </body>
+ 
 </html>
